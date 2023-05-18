@@ -1,10 +1,9 @@
 package br.com.springboot.repository;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-@Table(name = "foods")
-@Entity(name = "foods")
-public class FoodRepository {
+import br.com.springboot.model.Food;
+
+public interface FoodRepository extends JpaRepository<Food, Long> {
   
 }
